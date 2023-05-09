@@ -1,0 +1,35 @@
+/* icon nagishLi design*/
+#NagishLiTrigger {
+    bottom: 20px;
+    /* top:10px; */
+    right: none;
+    left: 5px;
+    transform: scale(0.7, 0.7);
+    filter: grayscale(100%);
+}
+
+
+
+/* scroller */
+::-webkit-scrollbar {
+    width: 13px;
+    background: rgb(22, 14, 40);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    /* border: solid 1px rgb(255, 255, 255); */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background:  rgba(226, 16, 69, 0.308);
+    border-radius: 10px;
+    border: solid 1px rgb(246, 231, 216);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(197, 25, 68);
+}

@@ -1,0 +1,206 @@
+header {
+    min-height: 100px;
+    z-index: 999;
+}
+
+header .container {
+    min-height: inherit;
+    z-index: 999;
+}
+
+header .row {
+    min-height: inherit;
+}
+
+
+header h1 a {
+    color: white;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+
+header h1 span {
+    color: rgba(226, 16, 68, 0.984);
+}
+
+header .cv-border {
+    border-radius: 7px;
+    padding: 6px;
+    color: white;
+    background-color: rgba(226, 16, 69, 0.744);
+}
+
+header .cv-border a {
+    color: white;
+    text-decoration: none;
+}
+
+header .nav li {
+    padding: 0 22px;
+    transition: 500ms;
+}
+
+header .nav a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+header .nav a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+header .nav a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0%;
+    background: rgba(226, 16, 68, 0.984);
+    transition: 1000ms;
+    margin: 0 auto;
+}
+
+
+/* במעבר עכבר יציג את הקו מתחת ללינק */
+header .nav a:hover::after {
+    width: 100%;
+}
+
+header .burger {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+
+/* main */
+main {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .container .welcome {
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: rgba(226, 16, 69, 0.308);
+    display: inline-block;
+}
+
+main .container p,main .container h5 {
+    line-height: 32px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.strip {
+    min-height: 240px;
+    background: rgb(40, 26, 74);
+}
+
+.strip .container {
+    min-height: inherit;
+}
+
+.strip .container .row {
+    min-height: inherit;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.strip .container .box {
+    border: dashed 0.1px rgba(226, 16, 69, 0.427);
+    min-height: 170px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    border-radius: 0 40px 0 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.strip .container .box:hover {
+    border: solid 0.1px rgba(226, 16, 69, 0.674);
+}
+
+
+.strip .container .box h1 {
+    margin: 0;
+}
+
+.strip .container .box h4 {
+    font-weight: 200;
+}
+
+.strip .container .box img {
+    background: rgba(226, 16, 68, 0.984);
+    padding: 4px;
+    border-radius: 2px;
+    position: absolute;
+    left: 40px;
+    top: -20px;
+}
+
+
+
+@media (max-width:991px) {
+    .strip .container .box {
+        width: 40%;
+    }
+}
+
+
+@media (max-width:768px) {
+    header .d-flex ul {
+        min-height: 200px;
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        padding: 0;
+        background: rgb(22, 14, 40);
+        /* background:rgb(40, 26, 74);; */
+        /* background: rgba(226, 16, 69, 0.744); */
+        transform: translate(0, -130%);
+        /* transform: translate(100%, 0); */
+        transition: 300ms;
+        z-index: 10;
+        opacity: 0;
+    }
+
+    /* קלאס שהג'יי אס יוסיף שממקם אותו במקום הנכון */
+    header .d-flex .d-flex .nav_open {
+        opacity: 100%;
+        transform: translate(0, 0);
+    }
+
+    header .d-flex li {
+        padding: 12px 0;
+        text-align: center;
+        transition: none;
+    }
+
+    header .d-flex li:hover {
+        background: rgb(40, 26, 74);
+        transform: none;
+    }
+
+    header .nav a:hover::after {
+        width: 100%;
+    }
+
+    header .burger {
+        display: block;
+    }
+    .strip .container .box {
+        width: 45%;
+    }
+    
+
+}
