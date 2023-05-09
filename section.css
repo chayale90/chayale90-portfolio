@@ -7,8 +7,8 @@ section .row h1 {
 }
 
 section .row .project {
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
     margin: 10px;
     padding: 0;
     position: relative;
@@ -30,7 +30,7 @@ section .row .project .overlay {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(226, 16, 69, 0.868);
+    background: rgba(226, 16, 69, 0.9);
     opacity: 0;
     transform: scale(0);
     transition: opacity 0.5s;
@@ -38,8 +38,8 @@ section .row .project .overlay {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
     text-align: center;
+    padding: 20px;
     border-radius: 5px;
 }
 
@@ -48,10 +48,9 @@ section .row .project:hover .overlay {
     transform: scale(1);
 }
 
-section .row .project .overlay h4{
+section .row .project .overlay h5{
    font-weight: 400;
 }
-
 
 section .row .project .overlay a {
     font-size: 40px;
