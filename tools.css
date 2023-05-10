@@ -1,0 +1,21 @@
+.tools {
+    min-height: 200px;
+    background: rgb(40, 26, 74);
+}
+
+.tools .container {
+    min-height: inherit;
+}
+
+.tools .container .d-flex {
+    min-height: inherit;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tools .container .d-flex .tool{
+margin: 20px;
+
+}
