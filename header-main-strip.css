@@ -110,7 +110,7 @@ main .container p,main .container h5 {
 }
 
 .strip .container .box {
-    border: dashed 0.1px rgba(226, 16, 69, 0.427);
+    border: dashed 0.1px rgba(226, 16, 69, 0.509);
     min-height: 170px;
     width: 20%;
     display: flex;
@@ -143,63 +143,4 @@ main .container p,main .container h5 {
     position: absolute;
     left: 40px;
     top: -20px;
-}
-
-
-
-@media (max-width:991px) {
-    .strip .container .box {
-        width: 40%;
-    }
-}
-
-
-@media (max-width:768px) {
-    header .d-flex ul {
-        min-height: 200px;
-        display: none;
-        position: absolute;
-        top: 80px;
-        right: 0;
-        width: 100%;
-        padding: 0;
-        background: rgb(22, 14, 40);
-        /* background:rgb(40, 26, 74);; */
-        /* background: rgba(226, 16, 69, 0.744); */
-        transform: translate(0, -130%);
-        /* transform: translate(100%, 0); */
-        transition: 300ms;
-        z-index: 10;
-        opacity: 0;
-    }
-
-    /* קלאס שהג'יי אס יוסיף שממקם אותו במקום הנכון */
-    header .d-flex .d-flex .nav_open {
-        opacity: 100%;
-        transform: translate(0, 0);
-    }
-
-    header .d-flex li {
-        padding: 12px 0;
-        text-align: center;
-        transition: none;
-    }
-
-    header .d-flex li:hover {
-        background: rgb(40, 26, 74);
-        transform: none;
-    }
-
-    header .nav a:hover::after {
-        width: 100%;
-    }
-
-    header .burger {
-        display: block;
-    }
-    .strip .container .box {
-        width: 45%;
-    }
-    
-
 }

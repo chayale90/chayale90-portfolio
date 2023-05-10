@@ -1,0 +1,58 @@
+@media (max-width:991px) {
+    .strip .container .box {
+        width: 40%;
+    }
+
+}
+
+
+@media (max-width:768px) {
+    header .d-flex ul {
+        min-height: 200px;
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        padding: 0;
+        background: rgb(22, 14, 40);
+        transform: translate(0, -130%);
+        transition: 300ms;
+        z-index: 10;
+        opacity: 0;
+    }
+
+    header .d-flex .d-flex .nav_open {
+        opacity: 100%;
+        transform: translate(0, 0);
+    }
+
+    header .d-flex li {
+        padding: 12px 0;
+        text-align: center;
+        transition: none;
+    }
+
+    header .d-flex li:hover {
+        background: rgb(40, 26, 74);
+        transform: none;
+    }
+
+    header .nav a:hover::after {
+        width: 100%;
+    }
+
+    header .burger {
+        display: block;
+    }
+
+    .strip .container .box {
+        width: 45%;
+    }
+
+    section .row .project,
+    section .row .project-github {
+        height: 320px;
+        width: 320px;
+    }
+}
