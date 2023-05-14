@@ -87,6 +87,11 @@ section .row .seeMore:hover {
 
 section .row .seeMore .icon {
     font-size: 70px;
+    transition: 0.5s;
+}
+
+section .row .seeMore .icon:hover {
+    transform: scale(1.1,1.1);
 }
 
 section .row .project-github a {
