@@ -35,8 +35,6 @@
 }
 
 
-
-
 .tools .shrink-0 {
     flex-shrink: 0;
 }
@@ -44,13 +42,13 @@
 
 
 
-.tools .halfSlide .tool {
+.tools .halfSlide .tool img {
     transition-property: all;
     transition-timing-function: cubic-bezier(.4, 0, .2, 1);
     transition-duration: .15s
 }
 
-.tools .halfSlide .tool:hover {
+.tools .halfSlide .tool img:hover {
     transform: scale(1.1, 1.1);
 
 }
