@@ -39,9 +39,6 @@
     flex-shrink: 0;
 }
 
-
-
-
 .tools .halfSlide .tool img {
     transition-property: all;
     transition-timing-function: cubic-bezier(.4, 0, .2, 1);

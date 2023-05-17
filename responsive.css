@@ -3,6 +3,13 @@
         width: 40%;
     }
 
+    /* article */
+    article .container .screenshot {
+        width: 70%;
+    }
+    article .container .box .screenshot {
+        height: 100%;
+    }
 }
 
 
@@ -54,5 +61,10 @@
     section .row .project-github {
         height: 320px;
         width: 320px;
+    }
+
+    /* article */
+    article .container .box .screenshot {
+        width: 90%;
     }
 }
