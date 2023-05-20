@@ -1,48 +1,47 @@
 article {
     min-height: 500px;
     background: rgb(22, 14, 40);
-    
 }
+
 article .container h1 {
     font-family: 'Playfair Display', serif;
 }
+
 article .container .box {
-    min-height: 200px;
+    min-height: 270px;
     background: rgb(22, 14, 40);
-    border: 1px dotted rgba(226, 16, 69, 0.744);
+    /* border: 1px dotted rgba(226, 16, 69, 0.744); */
     border-radius: 5px;
-    padding: 15px;
-    width: 100%;
-    text-align: center;  
-     opacity: 0;
-    transition: opacity 1s;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+    margin-bottom: 40px;
 }
+
 article .container .box.animate {
     opacity: 1;
 }
+
 article .container .box .yourself {
     color: rgba(226, 16, 69, 0.744);
 }
 
 article .container .box .screenshot {
-    height: 300px;
-    width: 47%;
+    height: 200px;
+    width: 45%;
     margin: 10px;
     position: relative;
-    display: inline-block;   
-     transition: 0.5s;
+    display: inline-block;
+    transition: 0.5s;
 }
 
 article .container .screenshot img {
-    height: 90%;
+    height: 80%;
     width: 100%;
     object-fit: cover;
     border-radius: 3px;
-
 }
+
 article .container .screenshot:hover {
-    transform: scale(1.05,1.05);
+    transform: scale(1.03, 1.03);
 }
-
-
-

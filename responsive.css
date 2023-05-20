@@ -3,13 +3,7 @@
         width: 40%;
     }
 
-    /* article */
-    article .container .screenshot {
-        width: 70%;
-    }
-    article .container .box .screenshot {
-        height: 100%;
-    }
+  
 }
 
 
@@ -65,6 +59,6 @@
 
     /* article */
     article .container .box .screenshot {
-        width: 90%;
+        width: 80%;
     }
 }

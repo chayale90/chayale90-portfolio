@@ -19,7 +19,9 @@ body {
 .fs18{
     font-size: 18px;
 }
-
+.red{
+   color: rgba(226, 16, 69, 0.744)
+}
 /* red types: */
 /* rgba(226, 16, 69, 0.744)
 rgba(226, 16, 68, 0.984) */

@@ -38,24 +38,25 @@
 <script>
     // Add the "is-visible" class to the image once it's in the viewport
     const screenshotImages = document.querySelectorAll('.screenshot img');
-  
+
     const revealImage = (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-        }
-      });
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+            }
+        });
     };
-  
+
     const screenshotObserver = new IntersectionObserver(revealImage, {
-      root: null,
-      threshold: 0.2, // Adjust the threshold as per your needs
+        root: null,
+        threshold: 0.2, // Adjust the threshold as per your needs
     });
-  
+
     screenshotImages.forEach((image) => {
-      screenshotObserver.observe(image);
+        screenshotObserver.observe(image);
     });
-  </script>
+</script>
+
 <body>
 
 
@@ -87,8 +88,8 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                Blog
+                            <a href="#plugins">
+                                Plugins
                             </a>
                         </li>
                         <!-- <li>
@@ -521,49 +522,87 @@
     </div>
 
 
-    <article class="container-fluid py-5">
+    <article id="plugins" class="container-fluid py-5">
         <div class="container">
-            <h1 class="display-5 mb-5">Developer plugins</h1>
+            <div class="row flex-wrap justify-content-center">
+                <h1 class="display-5 mb-5">Usefull Plugins</h1>
 
-            <div class="box">
-                <div class="my-4">
-                    <h3 class="fw200">Icons</h3>
+                <div class="box col-md-6 col-11">
+                    <div>
+                        <h4 class="fw200">Icons</h4>
+                    </div>
+                        <div class="screenshot">
+                            <h6>icons8</h6>
+                            <a href="https://icons8.com/" target="_blank">
+                                <img src="images/plugin/icons8.gif" alt="">
+                            </a>
+                        </div>
+                        <div class="screenshot">
+                            <h6>fontawesome</h6>
+                            <a href="https://fontawesome.com/v4/icons/" target="_blank">
+                                <img src="images/plugin/font-aewsome.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                <!-- end box -->
+
+                <div class="box col-md-6 col-11">
+                    <div>
+                        <h4 class="fw200 d-inline">Design palette</h4>
+                        <img src="icons/icons8-artist-palette-48.png" alt="icons8" width="35">
+                    </div>
+                    <div class="screenshot">
+                        <h6>Color hunt</h6>
+                        <a href="https://colorhunt.co/" target="_blank">
+                            <img src="images/plugin/color-hunt-screenShot1.gif" alt="colorHunt">
+                        </a>
+                    </div>
+                    <div class="screenshot">
+                        <h6>realtime colors</h6>
+                        <a href="https://realtimecolors.com/?colors=441313-ceb1b1-4685ff-a89494-ffb084s"
+                            target="_blank">
+                            <img src="images/plugin/realtime-color-screenshot.gif" alt="realtimecolors">
+                        </a>
+                    </div>
                 </div>
-                <div class="screenshot">
-                    <h5>icons8</h5>
-                    <a href="https://icons8.com/" target="_blank">
-                      <img src="images/plugin/icons8.gif" alt="">
-                    </a>
+                <!-- end box Design -->
+
+                <div class="box col-md-6 col-11">
+                    <div class="mb-2">
+                        <img src="icons/icons8-challenge.png" alt="icons8" width="30">
+                        <h4 class="fw200 d-inline"> Learn & challenge <span class="yourself">yourself</span> </h4>
+                    </div>
+                    <div class="screenshot">
+                        <h6>Frogy</h6>
+                        <a href="https://flexboxfroggy.com/#he" target="_blank">
+                            <img src="images/plugin/learn-flexbox-with-flexbox-froggy.png" alt="flexboxfroggy">
+                        </a>
+                    </div>
+                    <div class="screenshot">
+                        <h6>Frontend Mentor</h6>
+                        <a href="https://www.frontendmentor.io/challenges" target="_blank">
+                            <img src="images/plugin/Frontend-mentor.webp" alt="frontendmentor">
+                        </a>
+                    </div>
                 </div>
-                <div class="screenshot my-4">
-                    <h5>font awesome</h5>
-                    <a href="https://fontawesome.com/v4/icons/" target="_blank">
-                      <img src="images/plugin/font-aewsome.png" alt="">
-                    </a>
+                <!-- end box Learn & challenge-->
+
+                <div class="box col-md-6 col-11">
+                    <div class="mb-2">
+                        <h4 class="fw200 d-inline">fonts</h4>
+                    </div>
+                    <div class="screenshot">
+                        <h6>Google font</h6>
+                        <a href="https://fonts.google.com/" target="_blank">
+                            <img src="images/plugin/GoogleFonts.webp" alt="GoogleFonts">
+                        </a>
+                    </div>
                 </div>
+                <!-- end box Learn & challenge-->
+
+
+
             </div>
-            <!-- end box -->
-            
-            <div class="box my-5">
-                <div class="my-4">
-                    <img src="icons/icons8-challenge.png" alt="icons8" width="30">
-                    <h3 class="fw200 d-inline"> Learn & challenge <span class="yourself">yourself</span> </h3>
-                </div>
-                <div class="screenshot">
-                    <h5>Frogy</h5>
-                    <a href="https://flexboxfroggy.com/#he" target="_blank">
-                      <img src="images/plugin/learn-flexbox-with-flexbox-froggy.png" alt="flexboxfroggy">
-                    </a>
-                </div>
-                <div class="screenshot my-4">
-                    <h5>Frontend Mentor</h5>
-                    <a href="https://www.frontendmentor.io/challenges" target="_blank">
-                      <img src="images/plugin/Frontend-mentor.webp" alt="frontendmentor">
-                    </a>
-                </div>
-            </div>
-            <!-- end box -->
-            
         </div>
     </article>
 
@@ -588,25 +627,25 @@
 
     <script>
         function isElementInViewport(element) {
-          const rect = element.getBoundingClientRect();
-          return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-          );
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
         }
-      
+
         function animateOnScroll() {
-          const screenshotImages = document.querySelectorAll('.box');
-          screenshotImages.forEach((image) => {
-            if (isElementInViewport(image) && !image.classList.contains('animate')) {
-              image.classList.add('animate');
-            }
-          });
+            const screenshotImages = document.querySelectorAll('.box');
+            screenshotImages.forEach((image) => {
+                if (isElementInViewport(image) && !image.classList.contains('animate')) {
+                    image.classList.add('animate');
+                }
+            });
         }
         window.addEventListener('scroll', animateOnScroll);
-      </script>
+    </script>
 </body>
 
 </html>
