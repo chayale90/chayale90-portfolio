@@ -67,7 +67,7 @@ section .row .project .overlay .icon a {
 
 section .row .project .overlay .icon .text {
     font-size: 13px;
-    color: white;
+    color: var(--white)
 }
 
 section .row .seeMore {

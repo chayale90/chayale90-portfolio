@@ -8,12 +8,10 @@
     filter: grayscale(100%);
 }
 
-
-
 /* scroller */
 ::-webkit-scrollbar {
     width: 13px;
-    background: rgb(22, 14, 40);
+    background: var(--darkBlueColor)
 }
 
 /* Track */
@@ -26,7 +24,7 @@
 ::-webkit-scrollbar-thumb {
     background:  rgba(226, 16, 69, 0.308);
     border-radius: 10px;
-    border: solid 1px rgb(246, 231, 216);
+    border: solid 1px var(--white);
 }
 
 /* Handle on hover */

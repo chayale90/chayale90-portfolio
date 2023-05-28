@@ -1,6 +1,6 @@
 article {
     min-height: 500px;
-    background: rgb(22, 14, 40);
+    background: var(--darkBlueColor)
 }
 
 article .container h1 {
@@ -9,7 +9,7 @@ article .container h1 {
 
 article .container .box {
     min-height: 270px;
-    background: rgb(22, 14, 40);
+    background: var(--darkBlueColor);
     /* border: 1px dotted rgba(226, 16, 69, 0.744); */
     border-radius: 5px;
     text-align: center;
@@ -23,25 +23,34 @@ article .container .box.animate {
 }
 
 article .container .box .yourself {
-    color: rgba(226, 16, 69, 0.744);
+    color: var(--redColor)
 }
 
-article .container .box .screenshot {
+article .container .box .screenshotThird,
+article .container .box .screenshot{
     height: 200px;
-    width: 45%;
     margin: 10px;
     position: relative;
     display: inline-block;
     transition: 0.5s;
 }
 
-article .container .screenshot img {
+article .container .box .screenshot {
+    width: 45%;
+}
+article .container .box .screenshotThird {
+    width: 25%;
+}
+
+article .container .box .screenshot img,
+article .container .box .screenshotThird img {
     height: 80%;
     width: 100%;
     object-fit: cover;
     border-radius: 3px;
 }
 
-article .container .screenshot:hover {
+article .container .screenshot:hover,
+article .container .screenshotThird:hover {
     transform: scale(1.03, 1.03);
-}
+} 
