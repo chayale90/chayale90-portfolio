@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="responsive.css">
 
-    <title>myPrtfolio</title>
+    <title>Portfolio</title>
     <script>
         nagishli_config = {
             //The opportunities : Red Blue Green Purple Pink Yellow Gray Orange Turquoise Brown Black
@@ -65,8 +65,7 @@
     <header class="container-fluid">
         <div class="container p-0 p-md-2">
             <div class="d-flex justify-content-between align-items-center p-0">
-
-                <div class="p-0">
+                <div style="z-index: 999;" class="p-0">
                     <h1 class="m-0 display-1">
                         C<span><span class="display-6">haya</span>.</span>
                     </h1>
@@ -79,11 +78,6 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#services">
-                                Services
-                            </a>
-                        </li>
-                        <li>
                             <a href="#portfolio">
                                 Portfolio
                             </a>
@@ -93,11 +87,11 @@
                                 Plugins
                             </a>
                         </li>
-                        <!-- <li>
-                            <a href="contact.html">
-                                Contact Me
+                        <li>
+                            <a href="#contact">
+                                Contact
                             </a>
-                        </li> -->
+                        </li>
                     </ul>
 
                     <div class="cv-border ms-md-3 ">
@@ -114,7 +108,23 @@
     </header>
 
 
-    <main id="about" class="container-fluid pb-5">
+    <main style="position: relative;" id="about" class="container-fluid pb-5">
+        <div style="position: absolute; top: 150px;right: -120px; ">
+            <div style="color: red;transform: rotate(90deg); display: flex; align-items: center;">
+                <div style="width: 180px; color: red;">
+                    <h5 class="text-danger">FOLLOW ME ON:</h5>
+                </div>
+                <hr width="80px" class="me-5" />
+                <div style="transform: rotate(-90deg);gap: 10px;" class="d-flex flex-column pt-5 text-center">
+                    <a style="cursor: pointer;">
+                        <h4 class="text-danger">in</h4>
+                    </a>
+                    <a style="cursor: pointer;">
+                        <h4 class="text-danger">f</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
         <div class="container ">
             <div class="row justify-content-between">
                 <div class="col-md-7 col-12 pt-3">
@@ -145,24 +155,20 @@
                         alt="myProfile" width="100%">
                 </div>
             </div>
-
-
-
         </div>
     </main>
+
 
     <div id="services" class="container-fluid strip py-4">
         <div class="container">
             <div class="row align-items-center justify-content-around">
-
                 <div class="box my-3">
                     <h4>End to End Projects</h4>
                     <img src="icons/experience.png" alt="trophy" width="40">
                 </div>
 
                 <div class="box my-3">
-                    <!-- <h1>10+ </h1> -->
-                    <h4>Experience with browser APIs </h4>
+                    <h4 class="mt-2">Experience with RESTful API </h4>
                     <img src="icons/computer.png" alt="trophy" width="40">
                 </div>
 
@@ -175,15 +181,13 @@
                     <h4>Teamwork</h4>
                     <img src="icons/clients-white.png" alt="trophy" width="40">
                 </div>
-
             </div>
         </div>
-
-
     </div>
 
     <section style="position: relative;" id="portfolio" class="container-fluid py-5">
-        <div style="line-height: 12px; font-size: 25px; position: absolute; top: -50px; left: 0;">
+        <div class="d-none d-md-block"
+            style="line-height: 12px; font-size: 25px; position: absolute; top: -50px; left: -15px;">
             <div>. . . <span class="text-danger"> . . </span></div>
             <div>. . . <span class="text-danger"> . . </span></div>
             <div>. . . <span class="text-danger"> . . </span></div>
@@ -199,6 +203,9 @@
             <div><span class="text-danger">. . . </span> . . </div>
         </div>
 
+        <div
+            style="font-size: 100px; color: red; position: absolute;top: 50px; right: 20px; border-radius: 50px; width: 15px; height: 15px; background: red;">
+        </div>
         <div class="container">
             <div class="row ms-3">
                 <h1 class="display-5 ">Portfolio</h1>
@@ -560,8 +567,17 @@
     </div>
 
 
-    <article id="plugins" class="container-fluid pt-5">
+    <article style="position: relative;" id="plugins" class="container-fluid pt-5">
+
+        <!-- red circle -->
+        <div
+            style="font-size: 100px;  position: absolute;  bottom: 40px; left: 30px; border-radius: 50px; width: 15px;height: 15px; background: red;">
+        </div>
+
+
+
         <div class="container">
+
             <div class="row flex-wrap justify-content-center">
                 <h1 class="display-5 mb-5">Usefull Plugins</h1>
 
@@ -658,33 +674,113 @@
                     </div>
                 </div>
                 <!-- end box fonts-->
-
-
-
             </div>
         </div>
     </article>
 
-    <footer class="container-fluid">
+    <footer style="position: relative;" id="contact" class="container-fluid p-0">
+        <div class="d-none d-lg-block">
+            <!-- shapes Right-->
+            <!-- yellow triangular -->
+            <div style=" position: absolute;
+            top: 80px; 
+            right: 300px;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-bottom: 12px solid rgb(209, 203, 26);">
+            </div>
+
+            <!-- red circle -->
+            <div
+                style="font-size: 100px;  position: absolute;  top: 50px; right: 120px; border-radius: 50px; width: 15px;height: 15px; background: red;">
+            </div>
+
+            <!-- red triangular -->
+            <div style=" position: absolute;
+            width: 0;
+            height: 0;
+            top: 250px; 
+            right: 200px;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-bottom: 12px solid red;
+            transform: rotate(170deg);">
+            </div>
+
+            <!-- circle -->
+            <div
+                style=" position: absolute;  top: 280px;  right: 390px; border-radius: 50px; width: 8px;height: 8px; background: rgb(20, 189, 231);">
+            </div>
+
+
+            <!-- shapes left-->
+            <!-- yellow triangular -->
+            <div style=" position: absolute;
+            top: 80px; 
+            left: 300px;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-bottom: 12px solid rgb(209, 203, 26);
+            transform: rotate(180deg);">
+            </div>
+
+            <!-- red circle -->
+            <div
+                style="font-size: 100px;  position: absolute;  top: 280px; left: 380px; border-radius: 50px; width: 15px;height: 15px; background: red;">
+            </div>
+
+            <!-- red triangular -->
+            <div style=" position: absolute;
+            width: 0;
+            height: 0;
+            bottom: 100px; 
+             left: 90px;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-bottom: 12px solid red;
+            transform: rotate(150deg);">
+            </div>
+
+            <!--  circle -->
+            <div
+                style=" position: absolute;  top: 100px;  left: 90px; border-radius: 50px; width: 8px;height: 8px; background: rgb(20, 189, 231);">
+            </div>
+        </div>
+
+
+
+
         <div class="container">
             <div class="row">
-                <div class="circle">
+                <div style="z-index: 1;" class="circle">
                     <h1>Lets Say Hi</h1>
                     <h6 class="mt-2">chayale90@gmail.com</h6>
                     <div class="mt-4">
+
                         <a href="https://www.linkedin.com/in/chaya-segal/" target="_blank">
-                        <img src="icons/icons8-linkedin.svg" alt="linkedin" width="40" style="margin-right: 10px;">
-                        </a>
-                        <a href="https://www.facebook.com/profile.php?id=100012943155023" target="_blank">
-                            <img src="icons/icons8-facebook.svg" alt="facebook" width="40" style="margin-right: 10px;">
+                            <img src="icons/icons8-linkedin.svg" alt="linkedin" width="40" style="margin-right: 15px;">
                         </a>
                         <a href="https://www.instagram.com/chaya_segal10/" target="_blank">
-                            <img src="icons/icons8-instagram.svg" alt="instagram" width="40">
+                            <img src="icons/icons8-instagram.svg" alt="instagram" width="40"
+                                style="margin-right: 20px;">
+                        </a>
+                        <a href="tel:0556649380">
+                            <img src="icons/call.png" alt="call" width="30" style="margin-right: 25px;" />
+                        </a>
+                        <a href="whatsapp://send?text=שלום חיה,&phone=+97255-6649380">
+                            <img src="icons/whatsapp-circle.svg" alt="whatsappIcon" width="30" />
                         </a>
                     </div>
                 </div>
             </div>
         </div>
+        <hr />
+        <div class="row">
+            <div class="py-2 text-center">
+                @2023 - Chaya Segal - Full stack developer
+            </div>
+        </div>
+
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"

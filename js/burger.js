@@ -8,7 +8,7 @@ function burgerInit() {
     // alert("burger work");
     if (!isNavOpen) {
       burger_btn.innerHTML = `   
-      <i class="fa fa-times" aria-hidden="true"></i>`
+      <i class="fa fa-times x-icon" aria-hidden="true"></i>`
       // קודם דואג שיוצג
       nav_open.style.display = "block";
       setTimeout(function () {
@@ -24,7 +24,7 @@ function burgerInit() {
       // מוריד קלאס מסי אס אס 
       nav_open.classList.remove("nav_open");
       burger_btn.innerHTML = `   
-      <i class="fa fa-bars" aria-hidden="true"></i>
+      <i class="fa fa-bars " aria-hidden="true"></i>
       `
       setTimeout(function () {
         // ורק לאחר זמן האנימציה אחרי שהיא מסתיימת אנחנו 

@@ -74,6 +74,32 @@ header .burger {
     cursor: pointer;
 }
 
+.x-icon:hover {
+    /* CSS transitions example */
+    transition: transform 0.3s ease;
+    transform: rotate(90deg);
+  
+    /* CSS animations example */
+    animation-name: rotate-animation;
+    animation-duration: 0.3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes rotate-animation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(90deg);
+    }
+  }
+
+  
+  
+  
+  
+  
 /* main */
 main {
     min-height: 500px;
