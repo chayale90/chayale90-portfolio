@@ -3,7 +3,6 @@
     background: rgb(40, 26, 74);
     max-width: 100%;
     display: flex;
-    overflow: hidden;
 }
 
 .tools .halfSlide {
@@ -13,25 +12,14 @@
     align-items: center;
 }
 
-@keyframes infiniteSlideLeft {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-.tools .animate-infiniteSlide {
-    animation: infiniteSlideLeft 5s linear infinite;
-}
 
 .tools .inline-flex {
     display: inline-flex;
-    animation-duration: 25s;
+    /* animation-duration: 25s; */
     gap: 40px;
     padding-right: 40px;
+    animation: infiniteSlideLeft 25s linear infinite;
+  
 }
 
 
@@ -47,5 +35,14 @@
 
 .tools .halfSlide .tool img:hover {
     transform: scale(1.1, 1.1);
+}
 
+@keyframes infiniteSlideLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }

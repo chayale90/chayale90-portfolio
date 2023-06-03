@@ -6,6 +6,7 @@
     left: 5px;
     transform: scale(0.7, 0.7);
     filter: grayscale(100%);
+    overflow-y: hidden;
 }
 
 /* scroller */

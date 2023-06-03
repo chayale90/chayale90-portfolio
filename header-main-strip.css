@@ -147,6 +147,7 @@ main .container p,main .container h5 {
     justify-content: center;
     flex-direction: column;
     position: relative;
+    overflow-x: visible;
 }
 
 .strip .container .box:hover {
