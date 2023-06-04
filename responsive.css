@@ -29,6 +29,9 @@
     header .d-flex li {
         padding: 12px 0;
         text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         transition: none;
     }
 
