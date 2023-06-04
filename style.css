@@ -21,7 +21,8 @@ h1, h2, h3, h4, h5, h6 ,div{
 
 body {
     color: var(--white);
-    background: var(--darkBlueColor)
+    background: var(--darkBlueColor);
+    overflow-x: hidden;
 }
 
 .fw200 {

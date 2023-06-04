@@ -1,17 +1,12 @@
 header {
-    min-height: 72px;
-    z-index: 999;
+    min-height: 62px;
+    border: none;
 }
 
-header .container {
-    min-height: inherit;
-    z-index: 999;
-}
-
+header .container,
 header .row {
     min-height: inherit;
 }
-
 
 header h1 a {
     color: white;
@@ -78,28 +73,29 @@ header .burger {
     /* CSS transitions example */
     transition: transform 0.3s ease;
     transform: rotate(90deg);
-  
+
     /* CSS animations example */
     animation-name: rotate-animation;
     animation-duration: 0.3s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
-  }
-  
-  @keyframes rotate-animation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(90deg);
-    }
-  }
+}
 
-  
-  
-  
-  
-  
+@keyframes rotate-animation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(90deg);
+    }
+}
+
+
+
+
+
+
 /* main */
 main {
     min-height: 500px;
@@ -115,7 +111,8 @@ main .container .welcome {
     display: inline-block;
 }
 
-main .container p,main .container h5 {
+main .container p,
+main .container h5 {
     line-height: 32px;
     font-family: 'Montserrat', sans-serif;
 }
