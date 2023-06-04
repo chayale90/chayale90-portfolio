@@ -136,7 +136,7 @@ main .container p,main .container h5 {
 }
 
 .strip .container .box {
-    border: dashed 0.1px rgba(226, 16, 69, 0.509);
+    border: dashed 0.1px rgba(226, 16, 69, 0.728);
     min-height: 170px;
     width: 20%;
     display: flex;
@@ -151,7 +151,7 @@ main .container p,main .container h5 {
 }
 
 .strip .container .box:hover {
-    border: solid 0.1px rgba(226, 16, 69, 0.674);
+    border: solid 0.1px rgba(226, 16, 69, 0.897);
 }
 
 
