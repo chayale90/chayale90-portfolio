@@ -35,7 +35,11 @@ function burgerInit() {
   // Add click event listener to each navigation link
   var navLinks = nav_open.getElementsByTagName("a");
   for (var i = 0; i < navLinks.length; i++) {
-    navLinks[i].addEventListener("click", closeNav);
+    navLinks[i].addEventListener("click", function(){
+      if (window.innerWidth < 768) { // Adjust the screen width breakpoint as needed
+        closeNav();
+      }
+    });
   }
 }
 
