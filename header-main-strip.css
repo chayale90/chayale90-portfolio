@@ -14,20 +14,21 @@ header h1 a {
     transition: 500ms;
 }
 
-
 header h1 span {
-    color: rgba(226, 16, 68, 0.984);
+    color: var(--red-color-second);
 }
 
 header .cv-border {
     border-radius: 7px;
-    padding: 6px;
+    padding: 0.5rem 1rem;
     color: white;
-    background-color: rgba(226, 16, 69, 0.744);
+    background: var(--red-color);
 }
 
 header .cv-border a {
     color: white;
+    font-weight: 500;
+    font-size: 1rem;
     text-decoration: none;
 }
 
@@ -52,7 +53,7 @@ header .nav a::after {
     display: block;
     height: 2px;
     width: 0%;
-    background: rgba(226, 16, 68, 0.984);
+    background: var(--red-color-second);
     transition: 1000ms;
     margin: 0 auto;
 }
@@ -113,7 +114,7 @@ main .container .welcome {
 
 main .container p,
 main .container h5 {
-    line-height: 32px;
+    line-height: 2.2;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -161,7 +162,7 @@ main .container h5 {
 }
 
 .strip .container .box img {
-    background: rgba(226, 16, 68, 0.984);
+    background: var(--red-color-second);
     padding: 4px;
     border-radius: 2px;
     position: absolute;
