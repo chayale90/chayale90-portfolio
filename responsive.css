@@ -1,12 +1,6 @@
 @media (max-width:768px) {
-    header .container {
-        position: fixed;
-        min-height: inherit;
-        z-index: 99;
-        background: var(--darkBlueColor);    
-    }
 
-    header .d-flex ul {
+    header .container .row ul {
         min-height: 62px;
         display: none;
         position: absolute;
@@ -21,12 +15,12 @@
         opacity: 0;
     }
 
-    header .d-flex .d-flex .nav_open {
+    header .container .row .nav_open {
         opacity: 100%;
         transform: translate(0, 0);
     }
 
-    header .d-flex li {
+    header .container .row ul li {
         padding: 12px 0;
         text-align: center;
         display: flex;
