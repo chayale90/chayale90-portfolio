@@ -23,6 +23,12 @@ header .cv-border {
     padding: 0.5rem 1rem;
     color: white;
     background: var(--red-color);
+    transition: .5s ease;
+    box-shadow: 0 0 1rem var(--red-color);
+}
+
+header .cv-border:hover {
+    box-shadow: none;
 }
 
 header .cv-border a {
