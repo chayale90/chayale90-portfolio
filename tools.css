@@ -3,6 +3,7 @@
     background: rgb(40, 26, 74);
     max-width: 100%;
     display: flex;
+    overflow-x: hidden;
 }
 
 .tools .halfSlide {
