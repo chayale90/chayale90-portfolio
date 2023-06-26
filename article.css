@@ -14,12 +14,14 @@ article .container .box {
     border-radius: 5px;
     text-align: center;
     opacity: 0;
-    transition: opacity 0.5s;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
     margin-bottom: 40px;
 }
 
 article .container .box.animate {
     opacity: 1;
+    transform: translateY(0);
 }
 
 article .container .box .yourself {

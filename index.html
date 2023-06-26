@@ -24,7 +24,6 @@
     <link rel="stylesheet" href="article.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="responsive.css">
-
     <title>Portfolio</title>
     <script>
         nagishli_config = {
@@ -37,36 +36,18 @@
     <script src="/nagishli_beta.js" charset="utf-8" defer></script>
 </head>
 
-<script>
-    // Add the "is-visible" class to the image once it's in the viewport
-    const screenshotImages = document.querySelectorAll('.screenshot img');
-
-    const revealImage = (entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('is-visible');
-            }
-        });
-    };
-
-    const screenshotObserver = new IntersectionObserver(revealImage, {
-        root: null,
-        threshold: 0.2, // Adjust the threshold as per your needs
-    });
-
-    screenshotImages.forEach((image) => {
-        screenshotObserver.observe(image);
-    });
-</script>
 
 <body>
     <header class="container-fluid">
         <div class="container">
             <div class="row">
                 <div class="d-flex justify-content-between align-items-center p-0">
-                    <h1 class="m-0 display-1">
-                        C<span><span class="display-6">haya</span>.</span>
-                    </h1>
+                    <a style="text-decoration: none;" href="#">
+                        <h1 class="m-0 display-1">
+                            C<span><span class="display-6">haya</span>.</span>
+                        </h1>
+                    </a>
+
                     <div class="d-flex align-items-center pt-md-4">
                         <ul id="nav_open" class="nav ">
                             <li>
@@ -129,8 +110,9 @@
                     <div class="welcome">
                         Welcome! I'M
                     </div>
-                    <img class="profile-img d-block d-md-none float-end" style="border-radius: 10px; border: 2px solid white;"
-                        class="me-5" src="images/Picture3.jpg" alt="myProfile" width="110">
+                    <img class="profile-img d-block d-md-none float-end"
+                        style="border-radius: 10px; border: 2px solid white;" class="me-5" src="images/Picture3.jpg"
+                        alt="myProfile" width="110">
                     <div class="top-animation">
                         <div style="font-family: 'Unna', serif;" class="display-2 mt-2 ">
                             Chaya Segal
@@ -154,8 +136,8 @@
                     </div>
                 </div>
                 <div class="col-md-4 d-none d-md-block mx-auto pt-3">
-                    <img class="ms-md-3 profile-img" style="border-radius: 50px; border: 2px solid white;" src="images/Picture3.jpg"
-                        alt="myProfile" width="100%">
+                    <img class="ms-md-3 profile-img" style="border-radius: 50px; border: 2px solid white;"
+                        src="images/Picture3.jpg" alt="myProfile" width="100%">
                 </div>
             </div>
         </div>
@@ -786,32 +768,10 @@
 
     <script src="https://unpkg.com/scrollreveal"></script>
 
-    <script src="js/scroll-reveal.js"></script>
+    <script src="js/script.js"></script>
     <script src="js/burger.js"></script>
 
 
-
-    <script>
-        function isElementInViewport(element) {
-            const rect = element.getBoundingClientRect();
-            return (
-                rect.top >= 0 &&
-                rect.left >= 0 &&
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-            );
-        }
-
-        function animateOnScroll() {
-            const screenshotImages = document.querySelectorAll('.box');
-            screenshotImages.forEach((image) => {
-                if (isElementInViewport(image) && !image.classList.contains('animate')) {
-                    image.classList.add('animate');
-                }
-            });
-        }
-        window.addEventListener('scroll', animateOnScroll);
-    </script>
 </body>
 
 </html>
