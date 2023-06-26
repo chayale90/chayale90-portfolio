@@ -1,6 +1,6 @@
 header {
     min-height: 62px;
-    border: none;
+    background: var(--darkBlueColor);
 }
 
 header .container,

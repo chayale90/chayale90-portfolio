@@ -1,6 +1,11 @@
 @media (max-width:768px) {
-
-    header .container .row ul {
+    header {
+        position: sticky;
+        z-index: 9999;
+        top: 0;
+    }
+    
+    header .nav {
         min-height: 62px;
         display: none;
         position: absolute;
@@ -15,7 +20,7 @@
         opacity: 0;
     }
 
-    header .container .row .nav_open {
+    header .nav_open {
         opacity: 100%;
         transform: translate(0, 0);
     }

@@ -11,7 +11,7 @@
 
 /* scroller */
 ::-webkit-scrollbar {
-    width: 13px;
+    width: 10px;
     background: var(--darkBlueColor)
 }
 
