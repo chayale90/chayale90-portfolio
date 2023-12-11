@@ -1,76 +1,87 @@
-@media (max-width:768px) {
-    header {
-        position: sticky;
-        z-index: 9999;
-        top: 0;
-    }
-    
-    header .nav {
-        min-height: 62px;
-        display: none;
-        position: absolute;
-        top: 62px;
-        right: 0;
-        width: 100%;
-        padding: 0;
-        background: var(--darkBlueColor);
-        transform: translate(0, -130%);
-        transition: 300ms;
-        z-index: 10;
-        opacity: 0;
-    }
+@media (max-width: 768px) {
+  header {
+    /* position: sticky; */
+    z-index: 9999;
+    /* top: 0; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 
-    header .nav_open {
-        opacity: 100%;
-        transform: translate(0, 0);
-    }
+  header .nav {
+    min-height: 62px;
+    display: none;
+    position: absolute;
+    top: 62px;
+    right: 0;
+    width: 100%;
+    padding: 0;
+    background: var(--darkBlueColor);
+    transform: translate(0, -130%);
+    transition: 300ms;
+    z-index: 10;
+    opacity: 0;
+  }
 
-    header .container .row ul li {
-        padding: 12px 0;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: none;
-    }
+  header .nav_open {
+    opacity: 100%;
+    transform: translate(0, 0);
+  }
 
-    header .d-flex li:hover {
-        background: var(--blueColor);
-        transform: none;
-    }
+  header .container .row ul li {
+    padding: 12px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: none;
+  }
 
-    header .nav a:hover::after {
-        width: 100%;
-    }
+  header .d-flex li:hover {
+    background: var(--blueColor);
+    transform: none;
+  }
 
-    header .burger {
-        display: block;
-    }
+  header .nav a:hover::after {
+    width: 100%;
+  }
 
-    .strip .container .box {
-        width: 45%;
-    }
+  header .burger {
+    display: block;
+  }
 
-    .strip .container .box:nth-child(3) h4 {
-        font-size: 18px;
-    }
+  main .container {
+    padding-top: 3rem;
+  }
 
-    section .row .project,
-    section .row .project-github {
-        height: 320px;
-        width: 320px;
-    }
+  .strip .container .box {
+    width: 45%;
+  }
 
-    /* article */
-    article .container .box .screenshot,
-    article .container .box .screenshotThird {
-        width: 80%;
-    }
+  .strip .container .box:nth-child(3) h4 {
+    font-size: 18px;
+  }
+  section .container {
+    padding-top: 2rem;
+  }
+  section .row .project,
+  section .row .project-github {
+    height: 320px;
+    width: 320px;
+  }
 
+  /* article */
+  article .container {
+    padding-top: 2rem;
+  }
+  article .container .box .screenshot,
+  article .container .box .screenshotThird {
+    width: 80%;
+  }
 }
 
-@media (max-width:991px) {
-    .strip .container .box {
-        width: 40%;
-    }
+@media (max-width: 991px) {
+  .strip .container .box {
+    width: 40%;
+  }
 }

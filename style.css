@@ -14,15 +14,10 @@
   color: var(--white);
   scroll-behavior: smooth;
 }
-html {
-  scroll-behavior: smooth !important;
-  overflow-x: hidden !important;
-}
 
-body {
-  -ms-overflow-style: none; /* for Internet Explorer, Edge */
-  scrollbar-width: none; /* for Firefox */
-  overflow-y: scroll !important;
+html {
+  scroll-behavior: smooth !important ;
+  overflow-x: hidden;
 }
 
 h1,
@@ -36,6 +31,7 @@ div {
 }
 
 body {
+  overflow-y: scroll;
   color: var(--white);
   background: var(--darkBlueColor);
   overflow-x: hidden;
