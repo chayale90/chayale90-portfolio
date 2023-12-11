@@ -1,18 +1,28 @@
 :root {
-    --red-color: rgba(226, 16, 69, 0.744);
-    --red-color-second: rgba(226, 16, 68, 0.984);
-    --darkBlueColor: rgb(22, 14, 40);
-    --blueColor: rgb(40, 26, 74);
-    --white: white;
+  --red-color: rgba(226, 16, 69, 0.744);
+  --red-color-second: rgba(226, 16, 68, 0.984);
+  --darkBlueColor: rgb(22, 14, 40);
+  --blueColor: rgb(40, 26, 74);
+  --white: white;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Rubik', sans-serif;
-    color: var(--white);
-    scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  color: var(--white);
+  scroll-behavior: smooth;
+}
+html {
+  scroll-behavior: smooth !important;
+  overflow-x: hidden !important;
+}
+
+body {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll !important;
 }
 
 h1,
@@ -22,20 +32,19 @@ h4,
 h5,
 h6,
 div {
-    overflow-x: visible;
+  overflow-x: visible;
 }
 
 body {
-    color: var(--white);
-    background: var(--darkBlueColor);
-    overflow-x: hidden;
+  color: var(--white);
+  background: var(--darkBlueColor);
+  overflow-x: hidden;
 }
 
 .fw200 {
-    font-weight: 200;
+  font-weight: 200;
 }
 
 .fs18 {
-    font-size: 18px;
+  font-size: 18px;
 }
-
