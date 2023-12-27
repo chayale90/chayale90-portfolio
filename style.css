@@ -1,7 +1,8 @@
 :root {
   --red-color: rgba(226, 16, 69, 0.744);
   --red-color-second: rgba(226, 16, 68, 0.984);
-  --darkBlueColor: rgb(22, 14, 40);
+  --darkBlueColor: rgb(29, 19, 53);
+  /* --darkBlueColor: rgb(22, 14, 40); */
   --blueColor: rgb(40, 26, 74);
   --white: white;
 }

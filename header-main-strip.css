@@ -109,12 +109,12 @@ main {
   justify-content: center;
 }
 
-main .container .welcome {
+/* main .container .welcome {
   border-radius: 5px;
   padding: 10px 20px;
   background-color: rgba(226, 16, 69, 0.308);
   display: inline-block;
-}
+} */
 
 main .container p,
 main .container h5 {
