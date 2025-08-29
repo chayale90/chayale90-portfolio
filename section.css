@@ -10,7 +10,7 @@ section .row .project,
 section .row .project-github {
     height: 340px;
     width: 340px;
-    margin: 10px;
+    margin: 12px;
     padding: 0;
     position: relative;
     display: inline-block;  border-radius: 5px;
